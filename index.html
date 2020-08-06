@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sudoku</title>
+		<meta charset="utf-8"/>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#SudokuGrid, .SudokuSubGrid {
+				display: grid;
+				grid-auto-rows: 1fr;
+				grid-auto-columns: 1fr;
+				width: auto-fit;
+			}
+			#SudokuGrid {
+				width: 600px;
+				height: 600px;
+			}
+			.SudokuSubGrid {
+				border: 3px solid #2f2f2f;
+			}
+			.SudokuSubGrid input {
+				width: 100%;
+				display: grid;
+				align-content: center;
+				font-size: 32px;
+				border: 1px solid #dfdfdf;
+				border-collapse: collapse;
+			}
+			.SudokuSubGrid input[readonly] {
+				color: #afafaf;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="SudokuGrid"></div>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
